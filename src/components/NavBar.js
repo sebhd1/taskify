@@ -86,9 +86,7 @@ const NavBar = () => {
         >
             <Container>
                 <NavLink to="/">
-                    <Navbar.Brand>
-                        <img src="" alt="taskify site logo" height="45" />
-                    </Navbar.Brand>
+                    <h1>Taskify</h1>
                 </NavLink>
                 {currentUser && addTaskIcon}
                 <Navbar.Toggle
