@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Alert, Form, Button, Col, Modal, Row } from "react-bootstrap";
 import axios from "axios";
-import appStyles from "../../App.module.css";
 import { useHistory } from "react-router-dom";
 import contactImage from "../../assets/contact-image.jpg";
 
@@ -80,7 +79,6 @@ const ContactForm = () => {
           <Form.Control
               as="input"
               name="name"
-              className={appStyles.Input}
               value={name}
               onChange={handleChange}
               aria-label="name"
@@ -99,7 +97,7 @@ const ContactForm = () => {
           <Form.Control
               name="email"
               type="email"
-              className={appStyles.Input}
+
               value={email}
               onChange={handleChange}
               aria-label="email"
@@ -118,7 +116,7 @@ const ContactForm = () => {
           <Form.Control
               as="textarea"
               name="message"
-              className={appStyles.Input}
+
               value={message}
               onChange={handleChange}
               aria-label="message"
@@ -141,13 +139,12 @@ const ContactForm = () => {
   return (
       <Row>
         <Col md={6}>
-          <div className={appStyles.CenterAlignForm}>
+          <div>
             <Col md={7} lg={8}>
               <div
-                  className={`${appStyles.Content} ${appStyles.TextAlignCenter} d-flex flex-column justify-content-center`}
               >
                 <h3>Contact us</h3>
-                <div className={appStyles.Content}>{textFields}</div>
+                <div >{textFields}</div>
               </div>
             </Col>
           </div>
