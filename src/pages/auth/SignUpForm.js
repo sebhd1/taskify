@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import styles from "../../styles/CredentialsForm.module.css";
 import {
   Form,
   Button,
@@ -64,7 +63,7 @@ const SignUpForm = () => {
   return (
       <Row className="mt-5">
         <Col md={6} className="d-flex align-items-center">
-          <Container className={`${styles.Form} p-4`}>
+          <Container className={` p-4`}>
             <h1>Sign up!</h1>
             <p>Please enter your sign up details below.</p>
             <Form onSubmit={handleSubmit}>
@@ -143,8 +142,8 @@ const SignUpForm = () => {
             </Link>
           </Container>
         </Col>
-        <Col md={6} className={`d-none d-md-flex ${styles.ImageContainer}`}>
-          <img src={signupImage} alt="Signup" className={styles.SignupImage} />
+        <Col md={6} className={`d-none d-md-flex`}>
+          <img src={signupImage} alt="Signup" />
         </Col>
       </Row>
   );
