@@ -15,12 +15,15 @@ const LandingPage = () => {
                             <Card.Title>
                                 <h1 className="mb-4">Welcome to Taskify!</h1>
                             </Card.Title>
-                            <Card.Text className="font-weight-bold">
-                                Taskify is a productivity management site.
-                                <br />
-                                <br />
-                                Are you ready to create and complete some tasks?
-                            </Card.Text>
+                            <Row>
+                                <Col>
+                                    <p>
+                                        Taskify is a powerful task manager app that helps you stay organized
+                                        and productive. It provides a simple and intuitive interface to manage
+                                        your tasks effectively.
+                                    </p>
+                                </Col>
+                            </Row>
                         </Card.Body>
                         <Card.Body>
                             <div className="d-flex justify-content-around">
@@ -51,6 +54,29 @@ const LandingPage = () => {
                 </Col>
             </Row>
             <Container className={styles.FooterWidth}></Container>
+            <Row className="mt-5">
+                <Col md={6}>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Create tasks with titles, descriptions, and due dates</li>
+                        <li>Organize tasks into categories or projects</li>
+                        <li>Set task priorities and track their progress</li>
+                        <li>Assign tasks to team members and collaborate seamlessly</li>
+                        <li>Receive notifications and reminders for upcoming deadlines</li>
+                        <li>Generate reports and visualize task statistics</li>
+                    </ul>
+                </Col>
+                <Col md={6}>
+                    <h2>Get Started</h2>
+                    <p>
+                        Sign up for an account to start managing your tasks with Taskify. It's
+                        easy and free!
+                    </p>
+                    <Button variant="primary" href="/signup">
+                        Sign Up
+                    </Button>
+                </Col>
+            </Row>
         </Container>
     );
 };
