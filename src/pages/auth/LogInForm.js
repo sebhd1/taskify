@@ -3,7 +3,6 @@ import axios from "axios";
 import { Alert, Form, Button, Col, Row, Container } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
-import styles from "../../styles/CredentialsForm.module.css";
 import loginImage from "../../assets/login-image.jpg";
 
 function SignInForm() {
@@ -48,7 +47,7 @@ function SignInForm() {
   return (
       <Row className="mt-5">
         <Col md={6} className="d-flex align-items-center">
-          <Container className={`${styles.Form} p-4`}>
+          <Container className={` p-4`}>
             <h1>Log in!</h1>
             <p>Please enter your credentials below.</p>
             <Form onSubmit={handleSubmit}>
@@ -97,7 +96,7 @@ function SignInForm() {
           </Container>
         </Col>
         <Col md={6} className="d-none d-md-flex">
-          <img src={loginImage} alt="Login" className={styles.LoginImage} />
+          <img src={loginImage} alt="Login" />
         </Col>
       </Row>
   );
