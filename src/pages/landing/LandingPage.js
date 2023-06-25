@@ -66,7 +66,7 @@ const LandingPage = () => {
                     <img src={taskImage} alt="taskImage" className='img-fluid' />
                 </Col>
                 <Col md={6}>
-                    <section id="how-it-works" className="bg-light py-5">
+                    <section id="how-it-works" className="bg-light py-5 shadow p-3 mb-5 bg-white rounded">
                         <div className="container">
                             <h2 className="text-center mb-4">How It Works</h2>
                             <div className="row">
