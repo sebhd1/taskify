@@ -247,22 +247,24 @@ function TaskEditForm() {
           {message}
         </Alert>
       ))}
-      <Button  type="submit">
-        Save
-      </Button>
-      <Button
-        onClick={() => history.goBack()}
-      >
-        Cancel
-      </Button>
+      <div className="d-flex justify-content-around">
+        <Button  type="submit">
+          Save
+        </Button>
+        <Button
+            onClick={() => history.goBack()}
+        >
+          Cancel
+        </Button>
+      </div>
     </div>
   );
 
-  /* 
+  /*
     Returns task edit form and associated feedback modals
   */
   return (
-    <Row>
+    <Row className="justify-content-center">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <Form onSubmit={handleSubmit}>
           {showModal && (
