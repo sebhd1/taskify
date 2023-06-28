@@ -155,6 +155,7 @@ const ContactForm = () => {
                 src={contactImage}
                 alt="Contact Image"
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
+                className="mt-5"
             />
           </div>
         </Col>
