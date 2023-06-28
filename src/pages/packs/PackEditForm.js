@@ -192,14 +192,16 @@ function PackEditForm() {
           </Alert>
         ))}
       </Form.Group>
-      <Button type="submit">
-        Submit
-      </Button>
-      <Button
-        onClick={() => history.goBack()}
-      >
-        Cancel
-      </Button>
+      <div className="d-flex justify-content-around">
+        <Button type="submit">
+          Submit
+        </Button>
+        <Button
+            onClick={() => history.goBack()}
+        >
+          Cancel
+        </Button>
+      </div>
     </div>
   );
 
@@ -227,7 +229,7 @@ function PackEditForm() {
             className={` d-flex flex-column justify-content-center`}
           >
 
-            <h3>Edit pack</h3>
+            <h3>Edit Pack</h3>
             <div>{textFields}</div>
           </Container>
         </Col>
