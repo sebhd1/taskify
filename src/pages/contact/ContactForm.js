@@ -130,7 +130,7 @@ const ContactForm = () => {
             </Alert>
         ))}
         <div className="d-flex justify-content-around">
-          <Button type="submit">Submit</Button>
+          <Button type="submit" onClick={handleSubmit}>Submit</Button>
           <Button onClick={() => history.goBack()}>Cancel</Button>
         </div>
       </div>
