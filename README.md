@@ -364,7 +364,7 @@ The WAVE WebAIM web accessibility evaluation tool was used to test the websites'
  
 ### Manual testing
 
-<summary>See Testing User Stories</summary>
+<summary>Tests were performed mostly manual and throughout the development phase and deployment.</summary>
 
 #### Testing User Stories - Users
 
@@ -761,7 +761,7 @@ You can make a local clone of a repository via the following steps:
 
 - I used Stack Overflow for general troubleshooting and issues with grid spacing.
 
-- Feedback and comments from the reviewer of my portfolio project number 1/2/3 were taken into account for this project when running tests and identifying and fixing bugs.
+- Feedback and comments from the reviewer of my previous portfolio projects were taken into account for this project when running tests and identifying and fixing bugs.
 
 * The static images were taken from [Unsplash](https://unsplash.com/)
 
